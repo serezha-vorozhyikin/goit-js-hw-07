@@ -41,7 +41,7 @@ function onImageClick(e) {
 
 function onImageClose(e) {
   if (e.code === "Escape") modalWindow.close();
-  document.removeEventListener("keydown", onCloseModalCard);
+  document.removeEventListener("keydown", onImageClose);
 }
 
 refs.gallery.insertAdjacentHTML("beforeend", galleryMarkup);
